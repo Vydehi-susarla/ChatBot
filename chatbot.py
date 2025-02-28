@@ -13,7 +13,7 @@ st.write("Welcome to my ChatBot,How can i help you!")
 if "messages" not in st.session_state:
     st.session_state.messages=[]
 for message in st.session_state.messages:
-    with st.chat_message(message["role'])
+    with st.chat_message(message["role"])
         st.markdowm(message["content"])
 if prompt := st.chat_input("Say something..."):
     st.session_state.message.append({"role":"user","content":prompt})
